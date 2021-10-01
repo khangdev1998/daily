@@ -1,0 +1,120 @@
+.services {
+  padding-top: 240px;
+  &-content {
+    max-width: 540px;
+  }
+  &-list {
+    padding-top: 125px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-list__items {
+    width: calc(33.3333% - 26.6667px);
+    padding: 45px 38px;
+    box-shadow: #e2deeebf 0px 7px 29px 0px;
+    text-align: center;
+  }
+  &-list__image {
+    @include size(50px);
+  }
+  &-list__content {
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &-list__items .heading {
+    @include lineClamp(2);
+    font-weight: bold;
+    font-size: 25px;
+    color: #28203f;
+    margin: 24px 0 29px;
+    line-height: 1.2 !important;
+  }
+  &-list__items .description {
+    font-size: 17px !important;
+    color: #96929c !important;
+  }
+  .heading {
+    line-height: 0.9;
+    span {
+      font-weight: bold;
+    }
+    span:nth-child(2) {
+      font-size: 60px;
+      font-weight: 300;
+    }
+  }
+  .description {
+    font-size: 19px;
+    color: #9b9da7;
+  }
+  @include maxWidth(1279px) {
+    padding-top: 150px;
+    &-content {
+      max-width: 450px;
+    }
+    &-list__items .heading {
+      font-size: 20px !important;
+    }
+    &-list__items .description {
+      font-size: 16px !important;
+    }
+    .heading {
+      font-size: 60px;
+      line-height: 1.2;
+      span:nth-child(2) {
+        font-size: 40px;
+        display: block;
+      }
+    }
+    .description {
+      font-size: 16px;
+    }
+  }
+  @include maxWidth(1023px) {
+    padding-top: 100px;
+    &-list {
+      padding-top: 60px;
+      flex-wrap: wrap;
+      margin-bottom: -30px;
+    }
+    &-list__items {
+      width: calc(50% - 26.6667px);
+      margin-bottom: 30px;
+      &:last-child {
+        margin: 0 auto;
+      }
+    }
+    .heading {
+      font-size: 40px;
+      line-height: 1.2;
+      span:nth-child(2) {
+        font-size: 30px;
+        display: block;
+      }
+    }
+  }
+  @include maxWidth(767px) {
+    &-list {
+      display: block;
+    }
+    &-list__items {
+      width: 100%;
+    }
+  }
+  @include maxWidth(424px) {
+    &-list__image {
+      @include size(40px);
+    }
+    &-list__items {
+      padding: 45px 20px;
+    }
+    &-list__items .heading {
+      font-size: 18px !important;
+    }
+    &-list__items .description {
+      font-size: 14px !important;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  font-size: 18px;
+  overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+html {
+  font-family: $primary-font;
+}
+
+.container {
+  max-width: $wrapper + 60;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin: 0 auto;
+}
+
+.text-light {
+  color: $light-color !important;
+}
+
+.text-dark {
+  color: $dark-color;
+}
+
+.heading {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 40px;
+  color: $dark-color;
+  span {
+    font-weight: bold;
+  }
+}
+
+.description {
+  font-weight: 300;
+  line-height: calc(28 / 18);
+  word-break: break-all;
+}
+
